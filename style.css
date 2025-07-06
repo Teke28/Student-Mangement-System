@@ -1,0 +1,107 @@
+* {
+    /* margin:0px; */
+    overflow-x: hidden;
+}
+
+/* ----PAGE-HEADING-CSS---- */
+.card-header {
+    background-color: rgb(15, 235, 180);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* ----PAGE-CONTENT-CSS---- */
+
+/* ----ENROLLMENT-FORM-CSS---- */
+.enrollmentForm {
+    margin-right: -50px;
+    margin-left: 40px;
+}
+
+/* ----SEPARATOR---- */
+.separator {
+    background-color: rgb(15, 235, 180);
+    width: auto;
+    padding: 1px;
+    height: 70vh;
+}
+
+
+/* ----ENROLLED-STUDENT-DETAILS-CSS----     */
+.headingView {
+    background-color: rgb(15, 235, 180);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(35, 35, 80);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewDetails tr:nth-child(even) {
+    background-color: #e6f1ca;
+}
+
+.viewDetails tbody tr:nth-child(1){
+    animation: fadeIn 5s;
+    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.tableView {
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableView thead {
+    position: sticky;
+    top: -1px;
+}
+.viewDetails th {
+    background-color: rgb(156, 236, 18);
+    color: rgb(237, 245, 233);
+    
+}
+
+.tableView tbody {
+    overflow-y: scroll;
+}
+
+.viewDetails thead,
+th,
+tbody,
+tr,
+td {
+    border: 2px solid rgb(118, 166, 21);
+}
+
+.viewDesc tr td p {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.viewDesc #nameView {
+    font-weight: bold;
+}
+
+.viewDesc td img {
+    height: 16vh;
+}
+
+
+/* ----FOOTER-CSS---- */
+.card-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(15, 235, 180)
+}
+
+.card-footer p {
+    font-weight: bold;
+    color: rgb(19, 0, 0);
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "//16.170.204.74/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = u + "matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollment Form | TEKELE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- PAGE HEADING -->
+    <div class="card-header text-center mb-3 col-12 p-3">
+      Student Enrollment Form
+    </div>
+
+    <div class="card-body col-12 p-0">
+      <div class="row">
+        <!-- ENROLLMENT FORM -->
+
+        <div class="card-body col-sm-12 col-md-5">
+          <form
+            class="enrollmentForm mt-1"
+            onsubmit="callvalue()"
+            id="enrollmentForm"
+          >
+            <!-- NAME -->
+            <div class="row">
+              <label for="inputName" class="col-sm-12 col-md-3 col-form-label"
+                >Name</label
+              >
+              <div class="col-9 col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Full Name"
+                />
+              </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group row">
+              <label for="inputEmail" class="col-sm-12 col-md-3 col-form-label"
+                >Email</label
+              >
+              <div class="col-9 col-md-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="abc@xyz.com"
+                />
+              </div>
+            </div>
+
+            <!-- WEBSITE -->
+            <div class="form-group row">
+              <label
+                for="inputWebsite"
+                class="col-sm-12 col-md-3 col-form-label"
+                >Website</label
+              >
+              <div class="col-9 col-md-6 mb-3">
+                <input
+                  type="url"
+                  class="form-control"
+                  id="inputWebsite"
+                  placeholder="https://www.abc.com"
+                />
+              </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="form-group row">
+              <label for="inputImage" class="col-sm-12 col-md-3 col-form-label"
+                >Image Link</label
+              >
+              <div class="col-9 col-md-6 mb-3">
+                <input
+                  type="url"
+                  class="form-control"
+                  id="inputImage"
+                  placeholder="https://"
+                />
+              </div>
+            </div>
+
+            <!-- GENDER RADIO -->
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-3 pt-0">Gender</legend>
+                <div class="col-9">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioGender"
+                      id="radioMale"
+                      value="Male"
+                    />
+                    <label class="form-check-label" for="Male"> Male </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioGender"
+                      id="radioFemale"
+                      value="Female"
+                    />
+                    <label class="form-check-label" for="Female">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- SKILLS CHECKBOX -->
+            <div class="form-group row mt-1">
+              <div class="col-sm-12 col-md-3">Skills</div>
+              <div class="col-sm-12 col-md-9">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox1"
+                    value="Java"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox1"
+                    >Java</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox2"
+                    value="HTML"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox2"
+                    >HTML</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox3"
+                    value="CSS"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox3"
+                    >CSS</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox4"
+                    value="Javascript"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox4"
+                    >Javascript</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox5"
+                    value="C++"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox5"
+                    >C++</label
+                  >
+                </div>
+                <br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills[]"
+                    id="inlineCheckbox6"
+                    value="SQL"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox6"
+                    >SQL</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="btn-group row mt-1">
+              <div class="btn" role="toolbar">
+                <div class="btn-group" aria-label="First group">
+                  <button type="submit" class="btn btn-primary">
+                    Enroll Student
+                  </button>
+                </div>
+                <div class="btn">
+                  <button type="reset" id="reset1" class="btn btn-danger">
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- SEPARATOR -->
+        <div class="d-none d-md-block col-sm-12 separator"></div>
+
+        <!-- VIEW STUDENT DETAILS -->
+        <div class="col-sm-12 col-md-6 mt-3 mb-3 viewDetails pr-4">
+          <div class="card-body mt-2 m-4 viewDetailsCard">
+            <div class="card headingView text-center mb-5 col-12 col-md-11 p-1">
+              Enrolled Students
+            </div>
+
+            <div class="tableView table-responsive-sm col-12 col-md-11">
+              <table class="col-sm-12 col-md-12 table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="col-sm-7 col-md-8">Description</th>
+                    <th class="col-sm-4 col-md-3">Image</th>
+                  </tr>
+                </thead>
+                <tbody class="viewDesc" id="viewDesc"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer text-center mt-5 p-0">
+      <p class="m-0 p-0">
+        &copy; <span id="year"></span> Tekele Tesfeye. All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>
